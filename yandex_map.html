@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yandex_map</title>
+    <style>
+        #map {
+            height: 95%;
+        }
+        html,
+        body {
+            height: 95%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=[YOUR_KEY]" type="text/javascript"></script>
+<script>
+
+        let myMap;
+
+        ymaps.ready(init);
+
+        function init () {
+
+            myMap = new ymaps.Map('map', {
+
+                center: [50.448113309321954, 30.523180978105238],
+                zoom: 17
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+    }
+</script>
+</body>
+</html>
