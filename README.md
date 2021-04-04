@@ -1,1 +1,1 @@
-# new
+подключение карт google, yandex
